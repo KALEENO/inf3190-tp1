@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plainte - Elite Motors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body class="plainte">
+
+    <header>
+        <h1><a href="index.html">Elite Motors</a></h1>
+        <nav><ul>
+            <li><a href="index.html" id="nav-accueil">Accueil</a></li>
+            <li><a href="moderne.html">Moderne</a></li>
+            <li><a href="classique.html">Classique</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="plainte.html" class="active">Plainte</a></li>
+        </ul></nav>
+    </header>
+
+    <main>
+        <form>
+            <div>
+                <label for="plainte-nom">Nom:</label>
+                <input type="text" id="plainte-nom" placeholder="Issam Khalladi">
+            </div>
+            <div>
+                <label for="plainte-email">Email:</label>
+                <input type="email" id="plainte-email" required placeholder="email@adresse.com">
+            </div>
+            <div>
+                <label for="plainte-tel">Tél.:</label>
+                <input type="tel" id="plainte-tel" required placeholder="(XXX) XXX-XXXX">
+            </div>
+            <div>
+                <label for="plainte-options">Raison:</label>
+                <select name="plainte-options" id="plainte-options" required>
+                    <option disabled selected value> -- Choisir une option -- </option>
+                    <option value="1">Services insatisfaisant</option>
+                    <option value="2">Temps de livraison long</option>
+                    <option value="3">Problème de financement</option>
+                    <option value="4">Autre</option>
+                </select>
+            </div>
+            <div>
+                <textarea required maxlength="300" placeholder="Message*"></textarea>
+            </div>
+            <div>
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Elite Motors Automobile. Tous droits réservés.</p>
+        <p>78 Boul Gouin O, Montréal, QC, H4J 5E9</p>
+        <p>Email: <a href="mailto:info@elitemotors.com">info@elitemotors.com</a> | Phone: 1-800-456-7890</p>
+    </footer>
+
+</body>
+
+</html>
